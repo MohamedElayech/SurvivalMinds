@@ -11,7 +11,13 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <style>
+      .answers{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    </style>
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
@@ -170,13 +176,56 @@ https://templatemo.com/tm-591-villa-agency
         </div>
     <form class="questions-quizz">
       <div class="question">
-          <h4>Question 1: </h4><h5>What is the recommended compression depth for adult CPR?</h5>
+          <h4>Question 1: </h4><h5>What is the recommended compression depth for adult CPR?</h5><br>
           <div class="answers">
-            <input type="checkbox">
-            <input type="checkbox">
-            <input type="checkbox">
+            <label><input name="q1" type="radio">1 inch (2.5 cm)       </label>
+            <label><input name="q1" type="radio">2 inches (5 cm)       </label>
+            <label><input name="q1" type="radio">3 inches (7.5 cm)     </label>
+            <label><input name="q1" type="radio">4 inches (10 cm)      </label>  
           </div>
-        
+      </div>            
+      <hr>
+       
+      <br>  
+      <div class="question">
+        <h4>Question 2: </h4><h5>What is the recommended compression depth for adult CPR?</h5><br>
+        <div class="answers">
+          <label><input name="q2" type="radio"> 60 compressions per minute</label>
+          <label><input name="q2" type="radio">80 compressions per minute </label>
+          <label><input name="q2" type="radio">100 compressions per minute  </label>
+          <label><input name="q2" type="radio">120 compressions per minute   </label>
+        </div>  
+      </div>
+      <hr>     
+      <div class="question">
+        <h4>Question 3: </h4><h5>When providing CPR, what is the recommended compression rate for adults?</h5><br>
+        <div class="answers">
+          <label><input name="q3" type="radio">Check for a pulse   </label>
+          <label><input name="q3" type="radio">Administer rescue breaths </label>
+          <label><input name="q3" type="radio">Call for emergency medical assistance    </label>
+          <label><input name="q3" type="radio">Perform abdominal thrusts </label>  
+        </div>
+      </div>
+      <hr>
+      <div class="question">
+        <h4>Question 4: </h4><h5>In the CPR sequence, what should you do after delivering 30 chest compressions?</h5><br>
+        <div class="answers">
+          <label><input name="q4" type="radio">Lower half of the sternum  </label>
+          <label><input name="q4" type="radio">Upper half of the sternum     </label>
+          <label><input name="q4" type="radio">Center of the chest, between the nipples     </label>
+          <label><input name="q4" type="radio">Just above the collarbone  </label>  
+        </div>
+      </div>
+      <hr>
+      <div class="question">
+        <h4>Question 5: </h4><h5>What is the recommended ratio of chest compressions to rescue breaths for adult CPR</h5><br>
+        <div class="answers">
+          <label><input name="q5" type="radio">15 compressions to 2 breaths</label>
+          <label><input name="q5" type="radio">30 compressions to 2 breaths</label>
+          <label><input name="q5" type="radio">30 compressions to 1 breath</label>
+          <label><input name="q5" type="radio">15 compressions to 1 breath</label>  
+        </div>
+      </div> 
     </form>
     </div>
         <!--
