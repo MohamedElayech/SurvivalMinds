@@ -1390,6 +1390,14 @@ Page Header Style
   padding: 110px 0px;
   text-align: center;
 }
+.page-heading3 {
+  background-image: url(../images/contact.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 110px 0px;
+  text-align: center;
+}
 
 
 .page-heading span {
