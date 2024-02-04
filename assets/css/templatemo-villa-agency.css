@@ -745,15 +745,15 @@ Banner Style
 }
 
 .main-banner .item-1 {
-  background-image: url(../images/banner-01.jpg);
+  background-image: url(https://i.pinimg.com/originals/7e/2b/69/7e2b69d5787851837eb0df14dccd9b80.jpg);
 }
 
 .main-banner .item-2 {
-  background-image: url(../images/banner-02.jpg);
+  background-image: url(https://media.istockphoto.com/id/538686713/photo/cracked-asphalt-after-earthquake.jpg?s=612x612&w=0&k=20&c=SbzwfmL_xf0rgZ4spkJPZ6wD6tR4AzkYEeA5iyg-_u4=);
 }
 
 .main-banner .item-3 {
-  background-image: url(../images/banner-03.jpg);
+  background-image: url(https://www.ripplesnigeria.com/wp-content/uploads/2022/07/Wildfire-breaks-out-in-Tunisias-North-East.webp);
 }
 
 .main-banner .item span.category {
@@ -1375,7 +1375,32 @@ Page Header Style
 */
 
 .page-heading {
-  background-image: url(../images/page-heading-bg.jpg);
+  background-image: url(../images/Courses.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 110px 0px;
+  text-align: center;
+}
+.page-heading2 {
+  background-image: url(../images/banner.jpg);
+  background-position: center middle;
+  background-repeat: no-repeat;
+  background-size:auto;
+  padding: 110px 0px;
+  text-align: center;
+  height: 800px;
+}
+.page-heading3 {
+  background-image: url(../images/contact.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 110px 0px;
+  text-align: center;
+}
+.page-heading4 {
+  background-image: url(../images/disaster2.png);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1383,7 +1408,39 @@ Page Header Style
   text-align: center;
 }
 
+
 .page-heading span {
+  background-color: #fff;
+  color: #1e1e1e;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.page-heading2 span {
+  background-color: #fff;
+  color: #1e1e1e;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-top: 18%;
+}
+.page-heading3 span {
+  background-color: #fff;
+  color: #1e1e1e;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.page-heading4 span {
   background-color: #fff;
   color: #1e1e1e;
   font-size: 14px;
@@ -1397,8 +1454,35 @@ Page Header Style
 .page-heading span a {
   color: #1e1e1e;
 }
+.page-heading2 span a {
+  color: #1e1e1e;
+}
+.page-heading3 span a {
+  color: #1e1e1e;
+}
+.page-heading4 span a {
+  color: #1e1e1e;
+}
 
 .page-heading h3 {
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
+}
+.page-heading2 h3 {
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
+}
+.page-heading3 h3 {
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
+}
+.page-heading4 h3 {
   font-size: 48px;
   font-weight: 900;
   text-transform: uppercase;
@@ -1825,4 +1909,68 @@ body {
   .contact-page .section-heading {
     margin-right: 100px;
   }
+}
+.progress1{
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background-color:#fbd9cf ;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.progress_fill1{
+  transition:all 0.2s;
+  width:0%;
+  height:30px;
+  background-color:#f35525 ;
+}
+.progress_text1{
+  position:absolute;
+  top:20%;
+  right:10px;
+}
+.progress2{
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background-color:#fbd9cf ;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.progress_fill2{
+  transition:all 0.2s;
+  width:0%;
+  height:30px;
+  background-color:#f35525 ;
+}
+.progress_text2{
+  position:absolute;
+  top:20%;
+  right:10px;
+}
+.progress3{
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background-color:#fbd9cf ;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.progress_fill3{
+  transition:all 0.2s;
+  width:0%;
+  height:30px;
+  background-color:#f35525 ;
+}
+.progress_text3{
+  position:absolute;
+  top:20%;
+  right:10px;
+}
+.donatebutton{
+  
+  background-color: black;
+  color: white;
+  
+  border-radius: 10px;
 }
