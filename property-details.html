@@ -11,7 +11,30 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <style>
+      #submit-quizz{
+        position: relative;
+        border-radius: 5%;
+        border-width: 2px;
+        padding-top:15px ;
+        padding-bottom:15px ;
+        padding-left:25px ;
+        padding-right:25px ;
+        border-color: #f35525;
+        left: 40vw;
+      }
+      #submit-quizz:hover{
+        background-color: #f35525;
+        color: #fff;
+        border-width: 2px;
+        border-color: #fff;
+      }
+      .answers{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    </style>
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
@@ -148,9 +171,10 @@ https://templatemo.com/tm-591-villa-agency
             <span style="font-size: 2.5em;color:red;">7  </span>Continue giving sets of 30 chest compressions and 2 breaths. Use an AED as soon as one is available! Minimize interruptions to chest compressions to less than 10 seconds.
             <hr>
             <br><br>
-            <iframe width="500" height="315"
+            <iframe width="935" height="526" src="https://www.youtube.com/embed/rs3GOoBusOQ" title="Basic CPR Steps Every Bystander Should Know" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <!--<iframe width="1100" height="750"
               src="https://www.youtube.com/embed/watch?v=rs3GOoBusOQ">
-            </iframe>
+            </iframe>-->
           </div> 
          
         
@@ -163,10 +187,67 @@ https://templatemo.com/tm-591-villa-agency
       <div class="row">
         <div class="col-lg-4">
           <div class="section-heading">
-            <h6>| Best Deal</h6>
-            <h2>Find Your Best Deal Right Now!</h2>
+            <h6>Quiz Time!</h6>
+            <h2>test your knowledge:</h2>
           </div>
         </div>
+    <form class="questions-quizz">
+      <div class="question">
+          <h4>Question 1: </h4><h5>What is the recommended compression depth for adult CPR?</h5><br>
+          <div class="answers">
+            <label><input class="q1" name="q1" value="A" type="radio">1 inch (2.5 cm)       </label>
+            <label><input class="q1" name="q1" value="B" type="radio">2 inches (5 cm)       </label>
+            <label><input class="q1" name="q1" value="C" type="radio">3 inches (7.5 cm)     </label>
+            <label><input class="q1" name="q1" value="D" type="radio">4 inches (10 cm)      </label>  
+          </div>
+      </div>            
+      <hr>
+       
+      <br>  
+      <div class="question">
+        <h4>Question 2: </h4><h5>What is the recommended compression depth for adult CPR?</h5><br>
+        <div class="answers">
+          <label><input class="q2" name="q2" value="A" type="radio"> 60 compressions per minute</label>
+          <label><input class="q2" name="q2" value="B" type="radio">80 compressions per minute </label>
+          <label><input class="q2" name="q2" value="C" type="radio">100 compressions per minute  </label>
+          <label><input class="q2" name="q2" value="D" type="radio">120 compressions per minute   </label>
+        </div>  
+      </div>
+      <hr>     
+      <div class="question">
+        <h4>Question 3: </h4><h5>When providing CPR, what is the recommended compression rate for adults?</h5><br>
+        <div class="answers">
+          <label><input class="q3" name="q3" value="A" type="radio">Check for a pulse   </label>
+          <label><input class="q3" name="q3" value="B" type="radio">Administer rescue breaths </label>
+          <label><input class="q3" name="q3" value="C" type="radio">Call for emergency medical assistance    </label>
+          <label><input class="q3" name="q3" value="D" type="radio">Perform abdominal thrusts </label>  
+        </div>
+      </div>
+      <hr>
+      <div class="question">
+        <h4>Question 4: </h4><h5>In the CPR sequence, what should you do after delivering 30 chest compressions?</h5><br>
+        <div class="answers">
+          <label><input class="q4" name="q4" value="A" type="radio">Lower half of the sternum  </label>
+          <label><input class="q4" name="q4" value="B"type="radio">Upper half of the sternum     </label>
+          <label><input class="q4" name="q4" value="C" type="radio">Center of the chest, between the nipples     </label>
+          <label><input class="q4" name="q4" value="D" type="radio">Just above the collarbone  </label>  
+        </div>
+      </div>
+      <hr>
+      <div class="question">
+        <h4>Question 5: </h4><h5>What is the recommended ratio of chest compressions to rescue breaths for adult CPR</h5><br>
+        <div class="answers">
+          <label><input class="q5" name="q5" value="A" type="radio">15 compressions to 2 breaths</label>
+          <label><input class="q5" name="q5" value="B" type="radio">30 compressions to 2 breaths</label>
+          <label><input class="q5" name="q5" value="C" type="radio">30 compressions to 1 breath</label>
+          <label><input class="q5" name="q5" value="D" type="radio">15 compressions to 1 breath</label>  
+        </div>
+      </div>
+      <br><br>
+      <button type="button" onclick="verifyquiz()" id="submit-quizz">Submit</button> 
+    </form>
+    </div>
+        <!--
         <div class="col-lg-12">
           <div class="tabs-content">
             <div class="row">
@@ -182,7 +263,9 @@ https://templatemo.com/tm-591-villa-agency
                     <button class="nav-link" id="penthouse-tab" data-bs-toggle="tab" data-bs-target="#penthouse" type="button" role="tab" aria-controls="penthouse" aria-selected="false">Penthouse</button>
                   </li>
                 </ul>
-              </div>              
+              </div> 
+              -->             
+              <!--
               <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="appartment" role="tabpanel" aria-labelledby="appartment-tab">
                   <div class="row">
@@ -261,6 +344,7 @@ https://templatemo.com/tm-591-villa-agency
                 </div>
               </div>
             </div>
+            -->
           </div>
         </div>
       </div>
@@ -285,6 +369,66 @@ https://templatemo.com/tm-591-villa-agency
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script>
+  let q1 = document.querySelectorAll(".q1");
+  let q2 = document.querySelectorAll(".q2");
+  let q3 = document.querySelectorAll(".q3");
+  let q4 = document.querySelectorAll(".q4");
+  let q5 = document.querySelectorAll(".q5");
+  let submit = document.querySelector("#submit-quizz");
+  let sum = 0;
 
+  function verifyquiz() {
+      sum = 0;
+
+      function checkAnswers(answers, correctAnswer) {
+          answers.forEach(answer => {
+              if (answer.value === correctAnswer) {
+                  sum += 1;
+              }
+          });
+      }
+
+      let a1 = document.querySelector("input[name='q1']:checked");
+      let a2 = document.querySelector("input[name='q2']:checked");
+      let a3 = document.querySelector("input[name='q3']:checked");
+      let a4 = document.querySelector("input[name='q4']:checked");
+      let a5 = document.querySelector("input[name='q5']:checked");
+
+      if (a1 && a1.value === "B") {
+          sum += 1;
+      }
+      if (a2 && a2.value === "B") {
+          sum += 1;
+      }
+      if (a3 && a3.value === "C") {
+          sum += 1;
+      }
+      if (a4 && a4.value === "C") {
+          sum += 1;
+      }
+      if (a5 && a5.value === "C") {
+          sum += 1;
+      }
+
+      let res=document.createElement("div")
+
+      res.innerHTML=`${sum}/5 Answers correct`
+      res.style.color="#f35525"
+      res.style.position="relative"
+      res.style.left="39vw"
+      document.querySelector("form").appendChild(res)
+
+      setTimeout(()=> {
+          res.style.display='none';
+        }
+        ,3000);
+
+  }
+
+  //submit.addEventListener("click", verifyquiz);
+
+
+    </script>
   </body>
 </html>
