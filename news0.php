@@ -1,3 +1,15 @@
+<?php 
+$servername="localhost";
+$username="root";
+$password="";
+$db="sm";
+$conn= new mysqli($servername,$username, $password,$db);
+if(!($conn)){
+    die('erreur :');
+}
+$query = "select * from news where location='Tunis'";
+$result = mysqli_query($conn,$query);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,15 +25,12 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/news.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <!-- <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css"> -->
+    <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="assets/css/news2.css">
-    <link rel="stylesheet" href="assets/css/news.css">
-
-
 <!--
 
 TemplateMo 591 villa agency
@@ -72,41 +81,41 @@ https://templatemo.com/tm-591-villa-agency
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <h1>Villa</h1>
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="news.html"class="active">News</a></li>
-                      <li><a href="properties.html" >Properties</a></li>
-                      <li><a href="property-details.html">Property Details</a></li>
-                      <li><a href="contact.html">Contact Us</a></li>
-                      <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li>
-                  </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
+              <nav class="main-nav">
+                <!-- ***** Logo Start ***** -->
+                <img src="assets/images/wsinthechat.png" style="height: auto; width:15%; position: relative; right: 100px; bottom: 30px;">
+                <!--<a href="index.html" class="logo">
+                    <h1>Villa</h1>-->
+                </a>
+                <!-- ***** Logo End ***** -->
+                <!-- ***** Menu Start ***** -->
+                <ul class="nav">
+                  <li><a href="index.html" >Home</a></li>
+                  <li><a href="news.html" class="active">News&Alerts</a></li>
+                  <li><a href="courses.html">Courses</a></li>
+                  <li><a href="Donations.html">Donations</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="sign-up.html">ㅤㅤLogin/Signupㅤ</a></li>
+              </ul>   
+                <a class='menu-trigger'>
+                    <span>News&Alerts</span>
+                </a>
+                <!-- ***** Menu End ***** -->
+            </nav>
             </div>
         </div>
     </div>
   </header>
-  <!-- ***** Header Area End ***** -->
-
   <div class="page-heading header-text">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h3>News</h3>
+          <h3>News&Alerts</h3>
         </div>
       </div>
     </div>
   </div>
+
 
   <div class="section properties newscontainer container">
     
@@ -156,9 +165,20 @@ https://templatemo.com/tm-591-villa-agency
     <div class="alert">
         <h1 class="titre"><span><img src="assets/images/alert.png" alt=""></span>Alert</h1>
         <div class="alert_item">
-            <b class="alert_title">Earthquake Expected In Sousse</b>
-            <p>Citizens asked to evacuate before the next week</p><br>
-            <a href="#" class="alert_buttun">Explore</a>
+            <?php
+            while($row = mysqli_fetch_assoc($result)){
+
+            ?>
+            <div>
+              <?php 
+                echo("<b>".$row['title']."</b>"."<br>");
+                echo($row['discription']."<br>"."<br>"."<a href='#'>Explore</a>");
+              ?>
+            </div>
+            <?php
+            }
+            ?>
+
         </div>
     </div>
   </div>
