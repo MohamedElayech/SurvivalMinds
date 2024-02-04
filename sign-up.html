@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/signup.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="signup-container">
+        <h1>Sign up</h1>
+        <form action="#">
+            <div class="group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required placeholder="Username">
+            </div>
+            <div class="group">
+                <label for="Email">Email Address:</label>
+                <input type="text" id="Email" name="Email" required placeholder="user.adr@email.com">
+            </div>
+            <div class="group">
+                <label for="PhoneNumber">Phone Number:</label>
+                <input type="text" id="PhoneNumber" name="PhoneNumber" required placeholder="+216 XX XXX XXX">
+            </div>
+            
+            
+            <div class="group">
+                <label for="loc">Seclect state :</label>
+                <select name="location" id="loc" required>
+                    <option value="">Select a state...</option>
+                    <option value="Ariana">Ariana</option>
+                    <option value="Beja">Beja</option>
+                    <option value="Ben Arous">Ben Arous</option>
+                    <option value="Bizerte">Bizerte</option>
+                    <option value="Gabes">Gabes</option>
+                    <option value="Gafsa">Gafsa</option>
+                    <option value="Jendouba">Jendouba</option>
+                    <option value="Kairouan">Kairouan</option>
+                    <option value="Kasserine">Kasserine</option>
+                    <option value="Kebili">Kebili</option>
+                    <option value="Kef">Kef</option>
+                    <option value="Mahdia">Mahdia</option>
+                    <option value="Manouba">Manouba</option>
+                    <option value="Medenine">Medenine</option>
+                    <option value="Monastir">Monastir</option>
+                    <option value="Nabeul">Nabeul</option>
+                    <option value="Sfax">Sfax</option>
+                    <option value="Sidi Bouzid">Sidi Bouzid</option>
+                    <option value="Siliana">Siliana</option>
+                    <option value="Sousse">Sousse</option>
+                    <option value="Tataouine">Tataouine</option>
+                    <option value="Tozeur">Tozeur</option>
+                    <option value="Tunis">Tunis</option>
+                    <option value="Zaghouan">Zaghouan</option>
+                </select>
+            </div>
+            <div class="group">
+                <label for="pdp">Import profile image</label>
+                <input type="file" name="profile_image" id="pdp" required>
+            </div>
+            <div class="group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required placeholder="******">
+            </div>
+            <div class="group">
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="text" id="confirm_password" name="confirm_password" required placeholder="******">
+            </div>
+            <button type="submit">Sign up</button>
+        </form>
+    </div>
+</body>
+</html>
