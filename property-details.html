@@ -370,63 +370,63 @@ https://templatemo.com/tm-591-villa-agency
   <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
   <script>
-    let q1 = document.querySelectorAll(".q1");
-    let q2 = document.querySelectorAll(".q2");
-    let q3 = document.querySelectorAll(".q3");
-    let q4 = document.querySelectorAll(".q4");
-    let q5 = document.querySelectorAll(".q5");
-    let submit = document.querySelector("#submit-quizz");
-    let sum = 0;
+  let q1 = document.querySelectorAll(".q1");
+  let q2 = document.querySelectorAll(".q2");
+  let q3 = document.querySelectorAll(".q3");
+  let q4 = document.querySelectorAll(".q4");
+  let q5 = document.querySelectorAll(".q5");
+  let submit = document.querySelector("#submit-quizz");
+  let sum = 0;
 
-    function verifyquiz() {
-        sum = 0;
+  function verifyquiz() {
+      sum = 0;
 
-        function checkAnswers(answers, correctAnswer) {
-            answers.forEach(answer => {
-                if (answer.value === correctAnswer) {
-                    sum += 1;
-                }
-            });
+      function checkAnswers(answers, correctAnswer) {
+          answers.forEach(answer => {
+              if (answer.value === correctAnswer) {
+                  sum += 1;
+              }
+          });
+      }
+
+      let a1 = document.querySelector("input[name='q1']:checked");
+      let a2 = document.querySelector("input[name='q2']:checked");
+      let a3 = document.querySelector("input[name='q3']:checked");
+      let a4 = document.querySelector("input[name='q4']:checked");
+      let a5 = document.querySelector("input[name='q5']:checked");
+
+      if (a1 && a1.value === "B") {
+          sum += 1;
+      }
+      if (a2 && a2.value === "B") {
+          sum += 1;
+      }
+      if (a3 && a3.value === "C") {
+          sum += 1;
+      }
+      if (a4 && a4.value === "C") {
+          sum += 1;
+      }
+      if (a5 && a5.value === "C") {
+          sum += 1;
+      }
+
+      let res=document.createElement("div")
+
+      res.innerHTML=`${sum}/5 Answers correct`
+      res.style.color="#f35525"
+      res.style.position="relative"
+      res.style.left="39vw"
+      document.querySelector("form").appendChild(res)
+
+      setTimeout(()=> {
+          res.style.display='none';
         }
+        ,3000);
 
-        let a1 = document.querySelector("input[name='q1']:checked");
-        let a2 = document.querySelector("input[name='q2']:checked");
-        let a3 = document.querySelector("input[name='q3']:checked");
-        let a4 = document.querySelector("input[name='q4']:checked");
-        let a5 = document.querySelector("input[name='q5']:checked");
+  }
 
-        if (a1 && a1.value === "B") {
-            sum += 1;
-        }
-        if (a2 && a2.value === "B") {
-            sum += 1;
-        }
-        if (a3 && a3.value === "C") {
-            sum += 1;
-        }
-        if (a4 && a4.value === "C") {
-            sum += 1;
-        }
-        if (a5 && a5.value === "C") {
-            sum += 1;
-        }
-
-        let res=document.createElement("div")
-
-        res.innerHTML=`${sum}/5 Answers correct`
-        res.style.color="#f35525"
-        res.style.position="relative"
-        res.style.left="39vw"
-        document.querySelector("form").appendChild(res)
-
-        setTimeout(()=> {
-            res.style.display='none';
-          }
-          ,3000);
-
-    }
-
-    //submit.addEventListener("click", verifyquiz);
+  //submit.addEventListener("click", verifyquiz);
 
 
     </script>
