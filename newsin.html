@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="news.php" method="POST">
+        <label for="title">titre</label>
+        <input type="text" id="title" name="title"><br>
+        <label for="img">img</label>
+        <input type="file" id="img" name="image"><br>
+        <label for="location">loc</label>
+        <input type="text" id="location" name="location"><br>
+        <label for="discription">des</label>
+        <input type="text" id="description" name="discription"><br>
+        <input type="submit" value="add" onclick="gotonews()">
+    </form>
+</body>
+<script src="assets/js/news.js"></script>
+</html>
