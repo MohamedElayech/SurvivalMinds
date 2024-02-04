@@ -1384,11 +1384,12 @@ Page Header Style
 }
 .page-heading2 {
   background-image: url(../images/banner.jpg);
-  background-position: center bottom;
+  background-position: center middle;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:auto;
   padding: 110px 0px;
   text-align: center;
+  height: 800px;
 }
 .page-heading3 {
   background-image: url(../images/contact.jpg);
@@ -1419,12 +1420,26 @@ Page Header Style
   padding: 10px 25px;
   display: inline-block;
   margin-bottom: 30px;
+  margin-top: 18%;
+}
+.page-heading3 span {
+  background-color: #fff;
+  color: #1e1e1e;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  display: inline-block;
+  margin-bottom: 30px;
 }
 
 .page-heading span a {
   color: #1e1e1e;
 }
 .page-heading2 span a {
+  color: #1e1e1e;
+}
+.page-heading3 span a {
   color: #1e1e1e;
 }
 
@@ -1435,6 +1450,12 @@ Page Header Style
   color: #fff;
 }
 .page-heading2 h3 {
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
+}
+.page-heading3 h3 {
   font-size: 48px;
   font-weight: 900;
   text-transform: uppercase;
