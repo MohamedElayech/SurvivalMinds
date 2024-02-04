@@ -51,20 +51,20 @@ function update3(pbar,value){
 }
 let don3=0;
 function zid103(){
-    don3+=100;
+    don3+=1000;
     let val=Math.round((don3*100)/30000);
     let y=document.querySelector(".progress3");
-    update(y,val);
+    update3(y,val);
 }
 function zid203(){
-    don3+=202;
+    don3+=2000;
     let val=Math.round((don3*100)/30000);
     let y=document.querySelector(".progress3");
-    update(y,val);
+    update3(y,val);
 }
 function zid503(){
-    don3+=500;
+    don3+=5000;
     let val=Math.round((don3*100)/30000);
     let y=document.querySelector(".progress3");
-    update(y,val);
+    update3(y,val);
 }
